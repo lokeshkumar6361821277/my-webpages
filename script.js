@@ -1,12 +1,29 @@
-var tl = gsap.timeline();
-tl.from(".circle", {opacity: 0.6,scale:10, duration: 1});
-tl.from("nav",{x:-100,y:-100,scale:0,duration:1});
-tl.from(".links",{x:100,scale:2,duration:1})
-tl.from("#img", {x: 100,scale:0.3,opacity:0, duration: 1});
-tl.from("#h1", {y: 50,scale:2,opacity:0 ,duration: 1});
-tl.from("#arrows", {opacity: 0,scale:0, duration: 1});
-tl.from("footer", {opacity: 0,scale:0, duration: "0.4"});
-tl.from(".smalltext", {opacity: 0,scale:0, duration: "0.4"});
-tl.from("#lok", {opacity: 0,scale:0, duration: "0.2"});
+const tl=gsap.timeline();
+const image1=document.querySelector('.first');
+const body=document.querySelector('#container');
+
+
+tl.from('#anim1',{opacity:0,scale:0,duration:1})
+tl.from('#anim2',{opacity:1,scale:0,duration:1})
+tl.from('#anim3',{opacity:0,scale:0,duration:2})
+
+gsap.from('.p',{
+    x:2,
+    stagger:1
+})
+
+
+
+
+
+let doSome=()=>{
+    image1.style.height="0px";
+    image1.style.transition="0.5s";
+    image1.style.height="27em";
+    image1.classList.toggle('imgchanger');
+    body.classList.toggle('container2');
+}
+setInterval('doSome();',3000);
+   
 
 

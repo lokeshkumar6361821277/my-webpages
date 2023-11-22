@@ -3,415 +3,185 @@
     padding: 0;
     box-sizing: border-box;
 }
- html,body{
-    width: 100%;
-    height: 100%;
-    color: white;
-    overflow: hidden;
- }
-a{
-    color:#ffff;
-    text-decoration: none;
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
- .main{
-    width: 100%;
-    height: 100%;
-    padding: 2em;
-    background-color: #655d4b;
- }
-nav,.navleft{
-    height: max-content;
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    line-height: 1.5;
+    letter-spacing: 1.1rem;
+}
+h3{
+    font-size: 2rem;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-.navright a{
-    margin-left: 1em;
-}
-
-nav a svg{
-    width: 1.5em;
-    height: 1.5em;
-    padding-top: 0.5em;
-    padding-left: 0.2em;
+    background-color:#d3d4d8;
     
 }
-.herodiv{
-    width: 100%;
+.container2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3b1a6;
+}
+.main{
+    width: 70%;
     height: 80%;
-    margin-block-start: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white;
+    padding:0 1em;
+    border-radius: 1.5em;
+}
+.firstdiv{
+    width: 5%;
+    height: 100%;
+    padding: 2em 2em;
+}
+.seconddiv{
+    width: 90%;
+    height: 100%;
+    padding: 2em 2em;
+    position: relative;
+}
+.thirddiv{
+    width: 5%;
+    height: 100%;
+    padding: 2em 0em;
+    padding-bottom: 3em;
+}
+.slide{
+    margin-block: 5em;
+}
+.firstline,.secondline,.thirdline{
+    width: 0.15em;
+    height: 3em;
+    margin: 0.1em 1em;
+   background-color:rgb(150, 149, 149);
+    opacity: 0.5;
+}
+.menudiv{
+    width: 2em;
+    height: 2em;
+    margin-bottom: 15em;
+}
+.instagram img{
+    width: 1em;
+    height: 1em;
+    margin-bottom: 1em;
+}
+.pinterest img{
+    width: 1em;
+    height: 1em;
+    margin-bottom: 1em;
+}
+.facebook img{
+    width: 1em;
+    height: 1em;
+    margin-bottom: 1em;
+}
+.twitter img{
+    width: 1em;
+    height: 1em;
+    margin-bottom: 1em;
+}
+.imgdiv{
+    width: 44em;
+    height: 27em;
+    object-fit: cover;
+    background: url('no-revisions-d2zvqp3fpro-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+.morediv div img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0.2em;
+    animation: arrows 2s infinite;
+    animation-direction: alternate;
+}
+.imagediv{
+    margin-inline-start: 0.6em;
+
+}
+.headlines{
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+    width: 40ch;
+    text-align: left;
+}
+.headlines p{
+    font-size: 0.8rem;
+    letter-spacing: -1;
+    color: rgba(0, 0, 0, 0.68);
+}
+.morediv{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.heroleft{
-    width: 50%;
-    height: 100%;
-    position: relative;
+.morediv{
+    padding-top: 0.4em;
+    padding-left: 0.2em;
+    margin-inline-start: -14em;
+    margin-top: 5em;
+}
+@keyframes arrows {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(7px);
+    }
+    
+}
+@keyframes updown {
+    from{
+        transform: translateY(0);
+        transform: scale(0.95);
+    }
+    to{
+        transform: translateY(5px);
+        transform: scale(1);
+    }
+    
+}
+.p{
+    animation: updown 2s infinite;
+    animation-direction: alternate;
 }
 
-.heroright{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-}
-.links{
-    width: 10%;
-    height: 100%;
-    margin-top: 8em;
-}
-.links a{
-    display: block;
-    margin-block: 1.5em;
-    text-align: end;
-}
-.heroright .img img{
-    height: 100%;
-    width: 100%;   
-}
-.img{
-    position: relative;
+.morediv p{
+    font-size: 1rem;
+    color: #000;
 }
 
-.circle{
-    height: 3.2em;
-    width: 3.2em;
-    border-radius: 50%;
-    display: grid;
-    place-content:center;
-    background-color: rgb(223, 223, 76);
-    position: absolute;
-    top: 48%;
-    right: -6%;
+.imgchanger{
+    width: 44em;
+    height: 27em;
+    object-fit: cover;
+    background: url('david-van-dijk-3LTht2nxd34-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
 }
-.circle p{
-   font-size: 0.5rem;
-    color: black;
-}
-
-.herotext{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-block-start: 5em;
-}
-.bigtext h1{
-    font-size: 5rem;
-    font-weight: 400;
-}
-.bigtext{
-   line-height: 1;
-}
-.smalltext p{
-    text-align: right;
-    display: block;
-}
-.smalltext{
-    width: 20%;
-    margin-top: 1em;
-    margin-right: 2em;
-}
-.floatingdiv{
-    position: absolute;
-    left: 11.5em;
-    z-index: 22;
-    width: 50vw;
-    top: 2em;
-    font-size: clamp(0.5rem,1rem,1.5rem);
-
-}
-.floatingdiv>p{
-    margin-top: 1em; 
-    margin-left: 1em;
-}
-.arrows{
-    width: 3.4em;
-    height: 3.4em;
-    border-radius: 50%;
-    border: 0.5px solid white;
-    display: grid;
-    place-content:center;
-    transition: 0.3s ease-in-out;
-}
-.arrows:hover{
-    background-color: aliceblue;
-    color: black;
-}
-.wrap{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 1em;
-    margin-top: 3em;
-    margin-left: -1em;
-}
-
-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 3em 0;
-    width: 50%;
-    margin-inline: auto;
-    color: rgba(255, 255, 255, 0.594);
-
-}
-footer>p:nth-child(1){
-    color: #ffff;
-}
-
-
-
-
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .floatingdiv{
-        position: static;
-        font-size: clamp(0.3rem,0.5rem,0.9);
-        
-    }
-    .bigtext h1{
-        font-size:3.5rem;
-    }
-    .herotext{
-        font-size: 1rem;
-    }
-    footer{
-        margin: 2em auto;
-        width: 90%;
-
-    }
-    .arrows{
-        width: 2.4em;
-        height: 2.4em;
-    }
-    .wrap{
-        margin-left: 3em;
-    }
-    .heroright .img img{
-        height: 90%;
-        width: 85%;   
-    }
-    .circle{
-        top: 40%;
-        right: 6%;
-    }
-    .links{
-        margin-top: 5em;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1250px) {
-    .herotext{
-        font-size: 0.7rem;
-    }
-    footer{
-        margin-top: 3.2em;
-        margin-bottom: 1em;
-    }
-    .arrows{
-        width: 2.4em;
-        height: 2.4em;
-    }
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 1100px) {
-    .wrap{
-        margin:1em 1em 1em -1em
-    }
-    .floatingdiv{
-        left: 8.5em;
-    }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 963px) {
-    .floatingdiv{
-        left: 6em;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 850px) {
-    .floatingdiv{
-        left: 3.5em;
-    }
-
-}
-
-@media only screen and (max-width: 750px) {
-    .floatingdiv{
-        left: 2em;
-    }
-    .wrap{
-        margin-inline-start: 5em;
-        margin-top: 2em;
-    }
-    footer{
-        margin-top: 3em;
-        width: 90%;
-    }
-
-}
-@media only screen and (max-width:690px) {
-    .floatingdiv{
-        left: 0.3em;
-        width: 60vw;
-    }
-    .heroright .img img{
-        height: 97%;
-        width: 90%;   
-    }
-    .circle{
-        right: 0em;
-    }
-}
-@media only screen and (max-width:560px){
-    .heroright .img img{
-        height: 90%;
-        width: 90%;   
-    }
-    .herodiv{
-        margin-top: 2.6em;
-    }
-    footer{
-        margin-top: 1em;
-        width: 90%;
-    }
-    .main{
-        padding: 0.7em;
-    }
-    .floatingdiv{
-        top: -8em;
-        margin-top: 3em;
-    }
-    body{
-        overflow:auto;
-    }
-}
-
-@media only screen and (max-width:475px){
-    .bigtext h1{
-        font-size: 3rem;
-    }
-    .heroright .img img{
-        height: 88%;
-        width: 90%;   
-    }
-    footer{
-        margin-top: -0.2em;
-        width: 90%;
-    }
-    .herodiv{
-        margin-top: 3.5em;
-    }
-    body{
-        overflow:auto;
-    }
-}
-@media only screen and (max-width:440px){
-    .heroright .img img{
-        height: 80%;
-        width: 90%;   
-    }
-    .herodiv{
-        margin-top: 4em;
-    }
-    footer{
-        margin-top: -0.8em;
-        width: 90%;
-    }
-    footer p{
-       font-size: 0.9rem;
-    }
-    .links a{
-        font-size: 0.9rem;
-    }
-    body{
-        overflow:auto;
-    }
-
-}
-@media only screen and (max-width:380px){
-    .herodiv{
-        display: block;
-        margin-top: 1em;
-    }
-    .main{
-        height: auto;
-    }
-    .floatingdiv{
-        width: 100vw;
-        left: 0;
-    }
-    .heroright .img img{
-        height: 100%;
-        width: 85%;   
-    }
-    .heroleft{
-        width: 100%;
-    }
-    .heroright{
-        width: 100%;
-    }
-    footer{
-        margin-top: 2em;
-        width: 100%;
-    }
-    .circle{
-        right: 2em;
-    }
-    .bigtext h1{
-        font-size: 4rem;
-    }
-    .smalltext p{
-        font-size: 0.9rem;
-    }
-    body{
-        overflow:auto;
-    }
-}
-@media only screen and (max-width:355px){
-    footer{
-        display: block;
-        text-align: center;
-    }
-    body{
-        overflow:auto;
-    }
-}
-@media only screen and (max-width:340px){
-    .bigtext h1{
-        font-size: 3.4rem;
-    }
-    .smalltext p{
-        font-size: 0.9rem;
-    }
-    body{
-        overflow:auto;
-    }
-}
-@media only screen and (max-width:300px){
-    .bigtext h1{
-        font-size: 3.1rem;
-    }
-    .smalltext p{
-        font-size: 0.9rem;
-    }
-    .navright a{
-        font-size: 0.8rem;
-    }
-    body{
-        overflow:auto;
-    }
+.imgch{
+    width: 44em;
+    height: 27em;
+    object-fit: cover;
+    background: url('pawel-czerwinski-lWBZ01XRRoI-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
 }
