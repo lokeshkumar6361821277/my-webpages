@@ -1,29 +1,25 @@
-const tl=gsap.timeline();
-const image1=document.querySelector('.first');
-const body=document.querySelector('#container');
+let tl=gsap.timeline();
 
-
-tl.from('#anim1',{opacity:0,scale:0,duration:1})
-tl.from('#anim2',{opacity:1,scale:0,duration:1})
-tl.from('#anim3',{opacity:0,scale:0,duration:2})
-
-gsap.from('.p',{
-    x:2,
-    stagger:1
+tl.from('#navv,.page1',{
+    y:'-100vh',
+    x:'-50vw',
+    scale:'0.1',
+    rotate:360,
+    duration:1.5,
+    delay:1,
 })
 
 
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true,
+    getDirection: true,
+});
 
-
-let doSome=()=>{
-    image1.style.height="0px";
-    image1.style.transition="0.5s";
-    image1.style.height="27em";
-    image1.classList.toggle('imgchanger');
-    body.classList.toggle('container2');
-}
-setInterval('doSome();',3000);
-   
+const cursor = new MouseFollower({
+    container: '.wrapper',
+    speed: 0.5
+});
 
 
