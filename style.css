@@ -1,6 +1,280 @@
-body{
-    background-color: aquamarine;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-div{
-    background-color: blanchedalmond;
+:root{
+    --primary-text-color:white;
+    --secondary-text-color:skyblue;
+    --accent-color:teal;
+    --accent-color-dark:rgb(219, 173, 8);
+    --padding-inline-section:20px;
+}
+body{
+    font-family: sans-serif;
+    color: var(--accent-color);
+}
+.small-bold-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.top-banner{
+    background-color:teal;
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+.company-logo img{
+    height: 100px;
+    width: 200px;
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.nav-links ul{
+    justify-content:end;
+    gap: 25px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.hover-links{
+    text-decoration: none;
+    color:teal;
+    transition: 0.3s ease-in-out;
+}
+.hover-links:hover{
+    color: var(--accent-color-dark);
+}
+.pri-btn{
+    background-color: teal;
+    color: white !important;
+    border: 0.5px solid teal;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+.pri-btn:hover{
+    color:teal !important;
+    background-color: rgb(255, 255, 255);
+}
+.sec-btn{
+    border: 1px solid teal;
+    border-radius: 10px;
+    padding: 12px 18px;
+    color:teal !important;
+    transition: 0.3s ease-in;
+    font-weight: 600;
+}
+.sec-btn:hover{
+    background-color: teal;
+    color: white !important;
+}
+.header-section{
+    justify-content: space-evenly;
+}
+.header-left{
+    max-width: 963px;
+    padding: 27px;
+
+}
+.header-right img{
+    max-width: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.h1{
+    line-height: 3;
+}
+.p{
+    margin: 12px auto;
+}
+.btn{
+    text-decoration: none;
+    line-height: 3;
+}
+.company-header{
+    text-align: center;
+    font-size: small;
+    margin-block-end: 30px;
+}
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logos img{
+    max-width: 100px;
+    
+}
+.feat-header{
+    text-align: center;
+    margin:10px auto;
+}
+.ank{
+    margin: 60px auto;
+}
+.h2{
+    margin: 40px auto;
+}
+.feat-area{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.feat-card{
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 25px;
+   text-align: center;
+   margin-top: 50px;
+   max-width: 30%;
+}
+.feat-card img{
+    max-width: 100px;
+    max-height: 100px;
+}
+.features-section{
+    background-image: url(download.jpeg);
+    background-repeat:no-repeat;
+    background-position: center;
+    margin-bottom: 80px;
+}
+.big-feat-cont{
+    gap: 30px;
+}
+.feat-topic{
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.example-card{
+    width: 23%;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(th.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 0.2s ease-out;
+}
+.example-card:hover{
+    box-shadow: 0 0 20px 10px black;
+
+}
+.example-card:nth-child(2){
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(bottom.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.example-card:nth-child(3){
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.example-card:nth-child(4){
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(th\ \(1\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.example-card:nth-child(5){
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(th\ \(2\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.example-card:nth-child(6){
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(top.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.example-card:nth-child(7){
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(th\ \(4\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.example-card:nth-child(8){
+    background: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.884)), url(th\ \(5\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.card-text:hover{
+    color:  teal !important;
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white !important;
+    transition: 0.3s ease-in-out;
+}
+.examples-area{
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top:40px ;
+    justify-content: space-between;
+}
+.cta{
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    color: white;
+}
+.cta-section{
+    background: rgb(0, 128, 128);
+    margin: 20px;
+}
+.butt{
+    background-color: var(--accent-color-dark) !important;
+}
+.footerr>a>img{
+    max-width: 300px;
+    max-height: 100px;
+}
+.footerr{
+    
+    justify-content: space-between;
+    padding: 10px ;
+}
+.advertise{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.sub{
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    margin:auto;
+}
+.subfooter{
+    background: teal;
+    margin-top: 10px;
+}
+.f{
+    color: white !important;
+}
+.f:hover{
+    color: var(--accent-color-dark) !important;
+}
+.rotate{
+    transform: rotate(90deg);
+    display: none;
 }

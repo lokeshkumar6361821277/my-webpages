@@ -1,0 +1,25 @@
+@media  screen and (max-width:991px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+    }
+    .examples-area{
+        gap: 5px;
+        max-width: calc(50%-10px);
+    }
+    .example-card{
+        width:calc(50%-10px)
+    }
+    .company-logo{
+        width: 10px;
+        height: 90px;
+    }
+    .image{
+        max-width: 320px;
+
+    }
+}
